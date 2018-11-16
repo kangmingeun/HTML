@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function() {
+        //    $('input[type="text"]').css('color', 'orange');
+        //    $('input[type="text"]').val('Hello jQuery!');
+            setTimeout(function() {
+                // select에서 선택된 option값을 가져오기
+                alert($('select > option:selected').val());
+            }, 5000);
+        });
+    </script>
+</head>
+<body>
+    <select>
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Orange</option>
+        <option>Grape</option>
+        <option>Blueberry</option>
+    </select>
+    <br/>
+   <h1>Lorem ipsum</h1>
+   <p>Lorem ipsum dolor sit amet.</p>
+   <h1 id="target">Lorem ipsum</h1>
+   <p>Lorem ipsum dolor sit amet.</p>
+   <h1>Lorem ipsum</h1><br/>
+   <input type="text" /><br/>
+   <input type="password" /><br/>
+   <input type="radio" /><br/>
+   <input type="checkbox" /><br/>
+
+   
+</body>
+</html>
+

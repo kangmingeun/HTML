@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">    
+</head>
+<body>
+    <script>
+    //    var city = [];       // 배열 변수 선언
+        var city = new Array("Jeju");
+    //    city[0] = "Seoul";
+       city[1] = "Suwon";
+    //    city[2] = "Incheon";
+       city[3] = "Busan";
+       city[4] = "Daegu";
+        
+       function printArray() {
+            for (var i = 0; i < city.length; i++) {
+                document.write('배열[' + i + ']=' + city[i] + "<br/>");
+            }
+       }
+
+       printArray();
+       document.write(typeof city + "<br/>");
+       document.write(Array.isArray(city) + "<br/>");
+       document.write("city instanceof Array =" + (city instanceof Array) + "<br/>");
+    </script>
+
+</body>
+</html>

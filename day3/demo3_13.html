@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style>
+       div { border: 3px solid lightgreen; }
+       .img1 { float: right; } 
+       .img2 { float: right; } 
+       .fix {
+           overflow: auto;
+       }
+    </style>
+</head>
+<body>
+    <p>이미지가 영역을 벗어 낫을때</p>
+    <div>
+        <img class="img1" src="blockchain2.png" alt="이미지입니다.">
+        A blockchain,[1][2][3] originally block chain,[4][5] is a growing list of records, 
+        called blocks, which are linked using cryptography.
+        [1][6] Each block contains a cryptographic hash of the previous block,[6] a 
+        timestamp, and transaction data (generally represented as a merkle tree root hash).
+    </div>
+    <p>overflow: auto</p>
+    <div class="fix">
+        <img class="img2" src="blockchain2.png" alt="이미지입니다.">
+        A blockchain,[1][2][3] originally block chain,[4][5] is a growing list of records, 
+        called blocks, which are linked using cryptography.
+        [1][6] Each block contains a cryptographic hash of the previous block,[6] a 
+        timestamp, and transaction data (generally represented as a merkle tree root hash).
+    </div>
+</body>
+</html>
+

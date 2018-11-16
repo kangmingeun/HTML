@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">    
+</head>
+<body>
+    <script>
+        function printMsg(name, age) {
+            if (age == undefined) {
+                document.write("당신의 이름은: " + name + " 입니다.");
+            } else {
+                document.write("당신의 이름은: " + name + ", 나이는: " + age + " 입니다.");
+            }
+        }
+        // printMsg('이도원', 30);
+    </script>
+
+    <button type="button" onclick="printMsg('이도원', 30)">이름,나이 출력</button>
+    <button type="button" onclick="printMsg('이도원')">이름 출력</button>
+</body>
+</html>

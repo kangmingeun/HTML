@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button#btn_hide").click(function() {
+                $('p').hide();
+            });
+            $("button#btn_show").click(function() {
+                $('p').show();
+            });
+
+            $('ans').hide();
+            $('p.q1').click(function() {
+                $('ans.q1').show();
+            });
+            $('ans.q1').click(function() {
+                $('ans.q1').hide();
+            });
+        });
+    </script>
+</head>
+<body>
+   <p>jQuery를 이용한 메시지 삭제 기능입니다.</p>
+   <button id="btn_hide">메시지 삭제</button>
+   <button id="btn_show">메시지 보이기</button>
+
+   <h2>질문1: 대한민국 수도는?</h2>
+   <p class="q1">정답 보기</p>
+   <ans class="q1"><strong>서울</strong></ans>
+
+   <br/>
+</body>
+</html>
+

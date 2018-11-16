@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">    
+</head>
+<body>
+    <script>
+        var arrData = new Array('서울', '부산', '대전');
+        var p = arrData.push('제주', '광주');
+        document.write('데이터 개수:' + p + "<br/>");
+        document.write('원본 데이터:' + arrData + "<br/>");
+        var pp = arrData.pop();
+        document.write('데이터 개수:' + pp + "<br/>");
+        document.write('원본 데이터:' + arrData + "<br/>");
+        
+        document.write('<hr>forEach() 외부 함수사용<br/>')
+        function myArray(item) {
+            document.write(item + "<br/>");
+        }
+        arrData.forEach(myArray);
+
+        document.write('<hr>forEach(아이템)<br/>')
+        arrData.forEach(function(item) {
+            document.write(item + "<br/>");
+        });
+        
+        document.write('<hr>forEach(아이템, 인덱스)<br/>')
+        arrData.forEach(function(item, index) {
+            document.write(index + ":" + item + "<br/>");
+        });
+        
+        document.write('<hr>전통적인 배열 사용방법<br/>')
+        for(var i=0; i<arrData.length; i++) {
+            document.write(i + ":" + arrData[i] + "<br/>");
+        }
+
+    </script>
+</body>
+</html>

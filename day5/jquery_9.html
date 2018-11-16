@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('button').click(function() {
+                $.get({
+                    url: 'http://www.omdbapi.com',
+                    data: {
+                        apikey: '8122ef34',
+                        t: $('#movie_title').val()
+                    },
+                    
+                    success: function(data) {
+                        if (data.Response == "True") {
+                            $('img#poster').attr({
+                                "src": data.Poster, 
+                                "width": 100, 
+                                "height": 150
+                            });
+                            $('p#title').html(data.Title);
+                            $('p#rating').html(eval(data.Ratings[0].Value));
+                        } else {
+                            $('p#title').html(data.Error);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <input id="movie_title" type="text" size="30" placeholder="영화명을 입력하세요">
+    <button>검색</button>
+    <p/>
+    <img id="poster" src=""> <br/>
+    <p id="title"></p>
+    <p id="rating"></p>
+</body>
+</html>
+
+

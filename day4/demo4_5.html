@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">    
+</head>
+<body>
+    <script>
+        var grade = 88; 
+        var result = '';
+        judge = parseInt(88 / 10); // 8.8 (float)  
+        
+        switch ( judge )  { // judge -> 정수만 사용
+            case 9:
+                result = 'A'; break;
+            case 8:
+                result = 'B'; break;
+            case 7:
+                result = 'C'; break;
+            case 6:
+                result = 'D'; break;
+            case 8:
+                result = 'F'; break;
+        }
+        document.write("당신의 학점은 " + result + " 입니다. <br/>")
+        // if (grade >= 90) {
+        //     result = 'A';
+        // } else if (grade >= 80) {
+        //     result = 'B';
+        // } else if (grade >= 70) {
+        //     result = 'C';
+        // } else if (grade >= 60) {
+        //     result = 'D';
+        // } else {
+        //     result = 'F';
+        // }
+            
+        var day; 
+        var week = new Date().getDay();
+        document.write(week);
+        switch (week) { // ? 0 ~ 6
+            case 0:
+                day = '일요일';
+                break;
+            case 1:
+                day = '월요일';
+                break;
+            case 2:
+                day = '화요일';
+                break;
+            case 3:
+                day = '수요일';
+                break;
+            case 4:
+                day = '목요일'; 
+                break;
+            case 5:
+                day = '금요일';
+                break;
+            case 6:
+                day = '토요일';
+                break;
+            default:
+                day = '알수 없는 요일';
+                break;
+        }
+        
+        document.write("오늘은 <b>" + day + "</b> 입니다.");
+    </script>
+</body>
+</html>

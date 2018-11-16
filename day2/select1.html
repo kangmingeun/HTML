@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <form name="frm1" 
+          action="./get.jsp" method="get">
+        <p>
+        <select name="subjects" size="12" multiple>
+            <optgroup label="Languages">
+                <option value="1">HTML5</option> 
+                <option value="2">PYTHON</option> 
+                <option value="3">DJANGO</option> 
+                <option value="4">Etherium</option> 
+            </optgroup>
+            <optgroup label="O/S">
+                <option value="5">Windows</option> 
+                <option value="6">Mac</option> 
+                <option value="7">Linux</option> 
+            </optgroup>
+            <optgroup label="Database">
+                <option value="8">Oracle</option> 
+                <option value="9">Mysql</option> 
+                <option value="10">PostgreSQL</option> 
+                <option value="11">MS-SQL Server</option> 
+            </optgroup>
+        </select>
+        </p>
+        <p>
+            <input type="text" list="majorlist" name="major">
+            <datalist id="majorlist">
+                <option value="1">HTML5</option> 
+                <option value="2">PYTHON</option> 
+                <option value="3">DJANGO</option> 
+                <option value="4">Etherium</option> 
+                <option value="10">PostgreSQL</option> 
+                <option value="6">Mac</option> 
+                <option value="9">Mysql</option> 
+            </datalist>            
+        </p>
+        <input type="submit" value="전송">
+        <input type="reset" value="다시작성">
+    </form>
+</body>
+</html>

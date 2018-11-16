@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">    
+</head>
+<body>
+    <p>[Car1]</p>
+    <p id="p10"></p>
+    <p id="p20"></p>
+    <p id="p30"></p>
+    <p>[Car2]</p>
+    <p id="p11"></p>
+    <p id="p21"></p>
+    <p id="p31"></p>
+    <p>[Car3]</p>
+    <p id="p12"></p>
+    <p id="p22"></p>
+    <p id="p32"></p>
+    <script>
+        var car = [
+            {name: 'Sonata', speed: 100, color: 'Red'},
+            {name: 'Jeep', speed: 80, color: 'Blue'},
+            {name: 'Passt', speed: 150, color: 'Black'}
+        ];
+
+        var new_car = new Array(
+            ['Sonata', 100, 'Red'],
+            ['Jeep', 80, 'Blue'],
+            ['Passt', 150, 'Black']
+        );
+        
+        for (var i = 0; i < car.length; i++) {
+            document.getElementById("p1" + i).textContent = car[i].name;
+            document.getElementById("p2" + i).textContent = car[i].speed;
+            document.getElementById("p3" + i).textContent = car[i].color;
+        }
+    </script>
+        
+</body>
+</html>
+

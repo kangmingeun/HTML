@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">    
+</head>
+<body>
+    <script>
+        var arrData = new Array('서울', '부산', '대전');
+        var join1 = arrData.join();
+        document.write(join1+ "<p/>");
+
+        var join2 = arrData.join(' and ');
+        document.write(join2 + "<p/>");
+        
+        var arr1 = [1,2,3];
+        var arr2 = [4,5,6];
+        var arr3 = [7,8,9,10];
+        var arr4 = arr1.concat(arr2);
+        var arr5 = arr1.concat(arr2, arr3);
+
+        document.write(arr4 + "<br/>");
+        document.write(arr5 + "<br/>");
+        document.write(arr5.reverse() + "<br/>");
+        arrData[3] = "광주";
+        arrData[4] = "원주";
+        arrData[5] = "제주";
+        document.write(arrData.reverse() + "<br/>");
+        document.write(arrData.sort() + "<br/>");
+        document.write(arrData.sort().reverse() + "<br/>");
+        document.write(arrData.slice(0, 4) + "<br/>");
+        document.write(arrData.slice(4, -1) + "<br/>");
+        document.write(arrData.slice(-4, -2) + "<br/>");
+        document.write(arrData + "<br/>");
+        document.write(arrData.splice(2, 1) + "<br/>");
+        document.write(arrData + "<br/>");
+        document.write(arrData.splice(2, 2, 'Tokyo', 'NewYork') + "<br/>");
+        document.write(arrData + "<br/>");
+    </script>
+</body>
+</html>

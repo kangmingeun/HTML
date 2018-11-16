@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">    
+    <script>
+        function addImg() {
+            var img = document.createElement("img");
+            img.src = "blockchain2.png";
+            img.setAttribute('width', 100);
+            img.setAttribute('height', 100);
+            document.body.appendChild(img);
+        }
+        function hideText() {
+            document.getElementById("my_a").style.visibility = "hidden";
+            // document.getElementById("my_a").style.color = "red";
+        }
+        function showText() {
+            document.getElementById("my_a").style.visibility = "visible";
+        }
+    </script>
+</head>
+<body>
+    <a id="my_a" href="#" onclick="addImg()">이미지 추가</a>
+    <input type="button" onclick="hideText()" value="글자 숨기기">
+    <button type="button" onclick="showText()">글자 보이기</button>
+</body>
+</html>
+

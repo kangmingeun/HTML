@@ -1,0 +1,19 @@
+[
+    {
+        "user1": {
+                    "name": "Dowon, Lee",
+                    "email": "edowon0623@gmail.com",
+                    "job": "IT engineer"
+                }
+    },
+    {
+        "name": "Alice",
+        "email": "alice@gmail.com",
+        "job": "Project Manager"
+    },
+    {
+        "name": "Bob",
+        "email": "bob@gmail.com",
+        "job": "Desinger"
+    }
+]

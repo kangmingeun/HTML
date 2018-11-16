@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h2>LOGIN 데모</h2>
+    <form name="frm1" 
+          action="./login_process.jsp" method="post">
+        <fieldset>
+            <legend>로그인</legend>
+            <p>
+                ID: <input type="text" name="id" size="10" required>
+                <input type="button" value="ID 중복 체크" onclick="alert('클릭1');">
+            </p>
+            <p>Password: 
+                <input type="password" name="pwd" 
+                    placeholder="비밀번호를 입력하세요." required>
+                <button type="button" onclick="alert('클릭2');">Password 확인</button>
+            <p/>
+            <p>
+                <button type="button" 
+                    onclick="location.href='https://en.wikipedia.org/wiki/Blockchain'">
+                    <img src="blockchain2.png">
+                </button>
+            </p>
+            <input type="submit" value="LOGIN">
+            <input type="reset" value="RESET">
+        </fieldset>
+    </form>
+</body>
+</html>

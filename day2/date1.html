@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <form name="frm1" 
+          action="./get.jsp" method="get">
+        <h3>오늘 날짜 입력</h3>
+        Today: <input type="date" name="today">
+        <h3>프로젝트 수행 기간</h3>
+        From: <input type="date" name="from" min="2018-03-01" max="2018-06-30">
+        To: <input type="date" name="to" min="2018-07-01" max="2018-12-31">
+        <p/>
+        생일: <input type="month" name="birth">
+        주간 계획: <input type="week" name="weekend">
+        
+        <p>
+            이메일: <input type="email" name="email" 
+                    value="test@test.com" readonly>
+        </p>
+        <p>
+            URL: <input type="url" name="url" 
+                    value="http://www.naver.com" disabled>
+        </p>
+
+        <input type="submit" value="전송">
+        <input type="reset" value="다시작성">
+    </form>
+</body>
+</html>

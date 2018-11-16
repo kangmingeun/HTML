@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            // $('h1').filter(':even').css({
+            //     background: 'black',
+            //     color: 'white'
+            // });
+            $('h1').filter(function(index) {
+                return index % 2 == 0;
+            }).css({
+                background: 'black',
+                color: 'white'
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Item-1</h1>
+    <h1>Item-2</h1>
+    <h1>Item-3</h1>
+    <h1>Item-4</h1>
+    <h1>Item-5</h1>
+</body>
+</html>
+

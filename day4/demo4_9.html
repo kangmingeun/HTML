@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">    
+</head>
+<body>
+    <script>
+        var printMsg = function(msg, num) {
+            document.write('함수 호출 메시지:' + msg + "<br/>");
+
+            var sum = 0;
+            for (var i = 1; i <= num; i++) {
+                sum += i;
+            }
+            
+            return sum;
+        }
+        
+        var add = printMsg;
+
+        var text1 = "Hello~";
+        var result = printMsg(text1, 10);
+        document.write("1~10까지의 합:" + result + "<br/>");
+        document.write("1~100까지의 합:" + printMsg(text1, 100) + "<br/>");
+        document.write("1~1000까지의 합:" + add(text1, 1000) + "<br/>");
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">    
+</head>
+<body>
+    <script>
+        var arrData = new Array('서울', '부산', '대전', '제주', '광주');
+        
+        function myArray(item) {
+            document.write(item + "<br/>");
+            // return "Hello " + item + ".";
+            return item == "서울";
+        }
+        // var result = arrData.map(myArray);
+        var result = arrData.filter(myArray);
+        
+        document.write('<hr>');
+        result.forEach(function(item) {
+            document.write(item + "<br/>");
+        });
+    </script>
+</body>
+</html>

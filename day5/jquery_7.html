@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            // add, remove 버튼의 click 이벤트 추가
+            $('button.add').click(function() {
+                $('h1, h2, p').addClass("blue");
+                $('div').addClass('important');
+            });
+            $('button.remove').on('click', function() {
+                $('h1, h2, p').removeClass("blue");
+                $('div').removeClass('important');
+            });
+        });
+    </script>
+    <style>
+        .important {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML</h1>
+    <h2>CSS</h2>
+    <p>JavaScript</p>
+    <div>jQuery</div>
+    <button class="add">스타일 추가</button>
+    <button class="remove">스타일 삭제</button>
+</body>
+</html>
+
